@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Srihari | HTML CSS JS</title>
+    <title>Portfolio - Srihari | HTML CSS Javascript</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+<!--     
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script2.js"></script> -->
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -24,7 +28,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#education">Education</a>
+            <a href="#education">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
 
@@ -49,8 +53,9 @@
             </p>
 
             <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
+                <a href="#contact" class="btn">Hire Me</a>
+                <!-- <a href="https://drive.google.com/file/d/13bu7V5k5b9As2vBU69Gq5Vt_3QTTeva8/export?format=pdf"  target="_blank" rel="noopener noreferrer" download="resume.pdf" class="btn">Download CV</a> -->
+                <a href="https://drive.usercontent.google.com/u/0/uc?id=13bu7V5k5b9As2vBU69Gq5Vt_3QTTeva8&export=download" class="btn">Download CV</a>
                 <span class="animate" style="--i:5;"></span>
             </div>
         </div>
@@ -58,7 +63,9 @@
         <div class="home-sci">
             <a href="https://www.linkedin.com/in/srihari-gowrishankar-565882219/"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/SRIHARIG2003"><i class='bx bxl-github' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://auth.geeksforgeeks.org/user/sriharisu6a"><img src="./images/gfggfg.png" height="20px"></a>
+            <!-- <a href="" class=""><div style='background-color: #081b29'><img src="./images/gfgrev.png" width="25px" height="20px"></div></a> -->
+            <a href="https://www.instagram.com/_srihari_2003/"><i class='bx bxl-instagram' ></i></a>
             <span class="animate" style="--i:6;"></span>
         </div>
 
@@ -71,7 +78,7 @@
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h1></h2>
         <div class="about-img">
-            <img src="images/about.png" alt="">
+            <img src="/images/about.png" alt="">
             <span class="circle-spin"></span>
             <span class="animate scroll" style="--i:2;"></span>
         </div>
@@ -80,14 +87,14 @@
             <h3>Full Stack Developer <span class="animate scroll" style="--i:3;"></span></h3>
             <p>
                 A pre-Final year B.E Computer Science Engineering
-                Student studying at Dr.Mahalingam College of
-                Engineering and Technology, having a keen interest in
-                Full Stack Development and Exploring AI & Machine Learning Trends.
+                Student studying at Dr.Mahalingam College of Engineering and Technology, 
+                <br> having a keen interest in Full Stack Development and Exploring AI & Machine Learning Trends.<br>
+                <img src="./images/whiteloc.png" alt="Location: width="12px" height="14px"> Coimbatore <i class='bx bx-phone'></i> +91 9600688030 <i class='bx bxl-gmail' ></i> <a href="mailto:sriharig2003@gmail.com" style="color: lightskyblue;">sriharig2003@gmail.com</a>
                 <span class="animate scroll" style="--i:4;"></span>
             </p>
 
             <div class="btn-box btns">
-                <a href="#" class="btn">Read More</a>
+                <a href="#education" class="btn">Read More</a>
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
         </div>
@@ -105,7 +112,7 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <h3>AR AUTOMATION SYSTEM </h3>
+                            <h3>AR AUTOMATION SYSTEM <a href="https://github.com/SRIHARIG2003/AR_IoT"><i class='bx bxl-github'></i></a></h3>
                             <div class="year">Tech Stack : Unity<i class='bx bxl-unity' ></i> , IoT ,  Cloud<i class='bx bx-cloud' ></i></div>
                             <p>• an AR based automation application that displays the system controls overlaying the target image .
                                 <br>
@@ -117,7 +124,7 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <h3>STOREWAVE INSIGHTS</h3>
+                            <h3>STOREWAVE INSIGHTS <a href="https://github.com/SRIHARIG2003/StoreWaveInsights"><i class='bx bxl-github'></i></a></h3>
                             <div class="year">Tech Stack : IoT, HTML<i class='bx bxl-html5' ></i>, BootStrap<i class='bx bxl-bootstrap' ></i>, Javascript<i class='bx bxl-javascript'></i></div>
                             <p>• equips businesses with actionable insights to optimize store operations and drive sales growth.
                                 <br>
@@ -236,15 +243,15 @@
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
-
-        <form action="#">
+        <form action="https://formspree.io/f/xleqgobd"
+        method="POST">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" id="fname" name="fname" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email" required>
+                    <input type="text" placeholder="Email" id="email" name="email" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:3;"></span>
@@ -252,18 +259,18 @@
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="number" placeholder="Mobile Number" id="mbnumber" name="mbnumber" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Email Subject" id="emailsub" name="emailsub" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea cols="30" rows="10" placeholder="Your Message" id="message" name="message" required></textarea>
                 <span class="focus"></span>
                 <span class="animate scroll" style="--i:7;"></span>
             </div>
@@ -278,19 +285,30 @@
 
     <!-- footer design -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Srihari | All Rights Reserved.</p>
-            <span class="animate scroll" style="--i:1;"></span>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
-            <span class="animate scroll" style="--i:3;"></span>
-        </div>
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Srihari | All Rights Reserved.
+                </p>
+                <span class="animate scroll" style="--i:1;"></span>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
     </footer>
-
 
     <script src="js/script.js"></script>
 </body>
 
 </html>
+
+<!-- <p><img src="./images/location.png" width="20px" height="30px"> Coimbatore
+                9600688030 sriharig2003@gmail.com</p>
+            
+            
+            <div class="footer-contact">
+            <p>
+                <img src="./images/location.png" width="2px" height="3px" alt="Location Icon"> Coimbatore
+                <br>
+                9600688030 <a href="mailto:sriharig2003@gmail.com">sriharig2003@gmail.com</a>
+            </p>
+        </div>-->
